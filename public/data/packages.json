@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "WEBSITE STATIS",
+    "price": 269900,
+    "description": "Cocok untuk anda yang membutuhkan Landing Page, Company Profile, dan website statis lainnya.",
+    "banefits": [
+      "Otomatis online",
+      "Maksimal 3 Halaman",
+      "Tampilan modern",
+      "Desain responsif 3 perangkat",
+      "1 Domain (.com)",
+      "Sertifikat SSL",
+      "Mobile frendly"
+    ],
+    "redirect_link": "https://wa.me/6283133793060"
+  },
+  {
+    "id": 2,
+    "name": "WEBSITE DINAMIS",
+    "description": "Cocok untuk anda yang membutuhkan Toko Online dengan management produk.",
+    "price": 369900,
+    "banefits": [
+      "Otomatis online",
+      "3 Halaman",
+      "Tampilan modern",
+      "Desain responsif 3 perangkat",
+      "1 Domain (.com)",
+      "Sertifikat SSL",
+      "Mobile frendly"
+    ],
+    "features": ["Management konten"],
+    "redirect_link": "https://wa.me/6283133793060"
+  },
+  {
+    "id": 3,
+    "name": "WEBSITE KUSTOM",
+    "price": "MENYESUAIKAN",
+    "description": "Cocok untuk anda yang membutuhkan website dengan fitur tertentu.",
+    "banefits": [
+      "Otomatis online",
+      "Request halaman",
+      "Request tampilan",
+      "Request perangkat responsif",
+      "Kustom domain",
+      "Sertifikat SSL",
+      "Mobile frendly"
+    ],
+    "features": ["REQUEST FITUR"],
+    "redirect_link": "https://wa.me/6283133793060"
+  }
+]
