@@ -8,11 +8,6 @@ function ProjectCard(props) {
           <CardBody className="">
             <img src={props.projectImage} className="rounded-lg" />
           </CardBody>
-          <CardFooter className="absolute bottom-0 bg-white">
-            <h1 className="text-2xl font-semibold text-emerald-400">
-              {props.projectName}
-            </h1>
-          </CardFooter>
         </Card>
       </Link>
     </>

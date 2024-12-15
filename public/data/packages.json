@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "name": "WEBSITE STATIS",
+    "name": "Website Statis",
     "price": 269900,
-    "description": "Cocok untuk anda yang membutuhkan Landing Page, Company Profile, dan website statis lainnya.",
+    "description": "Cocok untuk Landing Page, Company Profile, dan Katalog Produk",
     "banefits": [
       "Otomatis online",
       "Maksimal 3 Halaman",
@@ -17,8 +17,8 @@
   },
   {
     "id": 2,
-    "name": "WEBSITE DINAMIS",
-    "description": "Cocok untuk anda yang membutuhkan Toko Online dengan management produk.",
+    "name": "Website Dinamis",
+    "description": "Cocok untuk Toko Online dengan management produk.",
     "price": 369900,
     "banefits": [
       "Otomatis online",
@@ -34,9 +34,9 @@
   },
   {
     "id": 3,
-    "name": "WEBSITE KUSTOM",
+    "name": "Website Kustom",
     "price": "MENYESUAIKAN",
-    "description": "Cocok untuk anda yang membutuhkan website dengan fitur tertentu.",
+    "description": "Cocok untuk website dengan fitur tertentu.",
     "banefits": [
       "Otomatis online",
       "Request halaman",
