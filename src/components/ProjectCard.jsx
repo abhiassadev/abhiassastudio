@@ -4,7 +4,7 @@ function ProjectCard(props) {
   return (
     <>
       <Link href={props.projectLink} className="w-full">
-        <Card className="w-full sm:w-64">
+        <Card className="bg-slate-900 w-full sm:w-64">
           <CardBody className="">
             <img src={props.projectImage} className="rounded-lg" />
           </CardBody>

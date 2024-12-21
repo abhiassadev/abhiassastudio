@@ -11,9 +11,9 @@ import {
 function MainNavbar() {
   return (
     <>
-      <header className="sticky top-0 z-20 bg-white flex justify-between gap-3 px-5 py-5 sm:flex-row sm:justify-between sm:items-center sm:px-16 sm:py-5">
+      <header className="sticky top-0 z-20 bg-transparent backdrop-blur-xl flex justify-between items-center gap-3 px-5 py-5 sm:flex-row sm:justify-between sm:items-center sm:px-16 sm:py-5">
         <div>
-          <Link href="" className="text-xl font-bold text-black sm:text-2xl">
+          <Link href="" className="text-xl font-bold text-white sm:text-2xl">
             Abhiassa Studio
           </Link>
         </div>
@@ -53,24 +53,34 @@ function MainNavbar() {
           <Dropdown>
             <DropdownTrigger>
               <Button isIconOnly className="bg-transparent">
-                <i className="bi bi-list text-2xl text-black"></i>
+                <i className="bi bi-list text-2xl text-white"></i>
               </Button>
             </DropdownTrigger>
             <DropdownMenu>
               <DropdownItem>
-                <Link href="/">Home</Link>
+                <Link href="/" className="text-black">
+                  Home
+                </Link>
               </DropdownItem>
               <DropdownItem>
-                <Link href="#pricing">Pricing</Link>
+                <Link href="#pricing" className="text-black">
+                  Pricing
+                </Link>
               </DropdownItem>
               <DropdownItem>
-                <Link href="#portofolio">Portofolio</Link>
+                <Link href="#portofolio" className="text-black">
+                  Portofolio
+                </Link>
               </DropdownItem>
               <DropdownItem>
-                <Link href="#about">About</Link>
+                <Link href="#about" className="text-black">
+                  About
+                </Link>
               </DropdownItem>
               <DropdownItem>
-                <Link href="#faq">Faq</Link>
+                <Link href="#faq" className="text-black">
+                  Faq
+                </Link>
               </DropdownItem>
             </DropdownMenu>
           </Dropdown>

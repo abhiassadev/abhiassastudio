@@ -10,15 +10,15 @@ import { Button, Link } from "@nextui-org/react";
 function PackageCard(props) {
   return (
     <>
-      <Card className="p-3 sm:w-80">
+      <Card className="bg-slate-900 p-3 sm:w-80">
         <CardHeader className="flex-col items-start">
-          <h1 className="text-sm font-medium text-black">
+          <h1 className="text-sm font-medium text-white">
             {props.packageName}
           </h1>
-          <h1 className="text-2xl font-bold text-emerald-400">
+          <h1 className="text-2xl font-bold text-white">
             Rp {props.price}/Tahun
           </h1>
-          <p className="text-xs font-normal text-black opacity-80">
+          <p className="text-xs font-normal text-white opacity-80">
             {props.data.description}
           </p>
         </CardHeader>
@@ -26,10 +26,10 @@ function PackageCard(props) {
           {props.data.banefits.map((banefit, index) => {
             return (
               <div key={index} className="flex items-center gap-2">
-                <div className="bg-emerald-400 w-5 h-5 flex justify-center items-center rounded-full">
+                <div className="bg-green-500 w-5 h-5 flex justify-center items-center rounded-full">
                   <i className="bi bi-check text-white"></i>
                 </div>
-                <p className="text-sm font-normal text-black opacity-80">
+                <p className="text-sm font-normal text-white opacity-80">
                   {banefit}
                 </p>
               </div>
@@ -38,13 +38,13 @@ function PackageCard(props) {
         </CardBody>
         <CardFooter className="gap-3">
           <Link href={props.data.redirect_link}>
-            <Button className="bg-gradient-to-r from-blue-500 to-emerald-200 text-base font-medium text-white">
+            <Button className="bg-gradient-to-r from-green-500 to-emerald-200 text-base font-medium text-white">
               Order
             </Button>
           </Link>
           <Dropdown>
             <DropdownTrigger>
-              <Button className="" variant="bordered">
+              <Button className="font-medium text-white" variant="bordered">
                 Fitur
               </Button>
             </DropdownTrigger>

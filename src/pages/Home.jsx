@@ -26,25 +26,28 @@ function Home() {
 
       <main className="flex flex-col gap-10 px-5 mt-10 mb-[50vh] sm:mt-44">
         <div className="flex flex-col text-wrap text-start">
-          <p className="text-sm font-semibold text-black opacity-80 mt-3 sm:text-lg sm:w-[60vw]">
+          <p className="text-sm font-semibold text-white opacity-80 mt-3 sm:text-lg sm:w-[60vw]">
             Selamat Datang di
-            <strong>Abhiassa Studio</strong>
+            <span className="font-medium text-green-500 ml-2">
+              Abhiassa Studio
+            </span>
           </p>
-          <h1 className="text-5xl font-bold text-emerald-500 mt-3 sm:text-4xl">
-            Penyedia Jasa Pembuatan Website
+          <h1 className="text-5xl font-bold text-white mt-3 sm:text-4xl">
+            Penyedia Jasa Pembuatan{" "}
+            <span className="text-green-500">Website</span>
           </h1>
-          <p className="text-sm font-normal text-black opacity-80 mt-3 sm:text-lg sm:w-[60vw]">
+          <p className="text-sm font-normal text-white opacity-80 mt-3 sm:text-lg sm:w-[60vw]">
             Mudahkan pelanggan mengetahui Informasi tentang Produk, Layanan, dan
             Jasa yang anda miliki dengan Website.
           </p>
           <div className="flex gap-5">
             <Link href="#pricing">
-              <Button className="bg-gradient-to-r from-blue-500 to-emerald-200 text-base font-semibold text-white mt-10 hover:from-100% hover:duration-500 sm:h-12">
+              <Button className="bg-gradient-to-r from-green-500 to-emerald-200 text-base font-semibold text-white mt-10 hover:from-100% hover:duration-500 sm:h-12">
                 Buat Sekarang
               </Button>
             </Link>
-            <Link href="#pricing">
-              <Button className="bg-transparent border border-slate-300 text-base font-semibold text-black mt-10 hover:from-100% hover:duration-500 sm:h-12">
+            <Link href="https://wa.me/6283133793060">
+              <Button className="bg-transparent border border-slate-300 text-base font-semibold text-white mt-10 hover:from-100% hover:duration-500 sm:h-12">
                 Hubungi Kami
               </Button>
             </Link>
@@ -53,7 +56,7 @@ function Home() {
       </main>
       <section id="pricing" className="px-5">
         <div className="flex flex-col justify-center items-center">
-          <h1 className="text-2xl font-bold text-emerald-400 sm:text-3xl">
+          <h1 className="text-2xl font-bold text-green-500 sm:text-3xl">
             Pricing
           </h1>
           <div className="flex flex-col gap-10 mt-10 sm:grid sm:grid-cols-2">
@@ -72,10 +75,10 @@ function Home() {
       </section>
       <section id="about" className="px-5">
         <div className="mt-20 sm:text-center sm:mt-44">
-          <h1 className="text-base font-medium text-emerald-300 sm:text-lg">
+          <h1 className="text-base font-medium text-white sm:text-lg">
             Kenapa Harus Pilih
           </h1>
-          <h1 className="text-2xl font-bold text-emerald-400 sm:text-3xl">
+          <h1 className="text-2xl font-bold text-green-500 sm:text-3xl">
             ABHIASSA STUDIO
           </h1>
           <div className="flex flex-col mt-10 gap-10 sm:flex-row">
@@ -99,10 +102,10 @@ function Home() {
       </section>
       <section id="portofolio" className="px-5">
         <div className="mt-20 sm:text-center sm:mt-44">
-          <p className="text-base font-medium text-emerald-300 sm:text-lg">
+          <p className="text-base font-medium text-white sm:text-lg">
             Portofolio
           </p>
-          <h1 className="text-2xl font-bold text-emerald-400 sm:text-3xl">
+          <h1 className="text-2xl font-bold text-green-500 sm:text-3xl">
             ABHIASSA STUDIO
           </h1>
           <div className="flex flex-col gap-5 mt-10 sm:grid sm:grid-cols-2">
@@ -116,15 +119,19 @@ function Home() {
       </section>
       <section id="faq" className="px-5">
         <div className="mt-20 sm:mt-44">
-          <h1 className="text-xl font-bold text-emerald-400">FAQ</h1>
+          <h1 className="text-xl font-bold text-green-500">FAQ</h1>
           <div>
-            <Accordion>
+            <Accordion variant="light">
               <AccordionItem
                 key="1"
                 aria-label="Accordion 1"
-                title="Berapa biaya kustom domain?"
+                title={
+                  <span className="text-white">
+                    Berapa biaya kustom domain?
+                  </span>
+                }
               >
-                <p className="text-base font-normal text-black opacity-80">
+                <p className="text-base font-normal text-white opacity-80">
                   Harga kustom domain berbeda-beda tergantung kebutuhan dan
                   harga ekstensi domain.
                 </p>
@@ -134,10 +141,14 @@ function Home() {
               <AccordionItem
                 key="2"
                 aria-label="Accordion 2"
-                title="Kapan melakukan pembayaran?"
+                title={
+                  <span className="text-white">
+                    Kapan melakukan pembayaran?
+                  </span>
+                }
               >
-                <p className="text-base font-normal text-black opacity-80">
-                  Pembayaran dilakukan di awal order.
+                <p className="text-base font-normal text-white opacity-80">
+                  Pembayaran dilakukan di awal order. Menggunakan sistem DP.
                 </p>
               </AccordionItem>
             </Accordion>
@@ -145,14 +156,18 @@ function Home() {
               <AccordionItem
                 key="3"
                 aria-label="Accordion 3"
-                title="Apa perbedaan website statis dan dinamis?"
+                title={
+                  <span className="text-white">
+                    Apa perbedaan website statis dan dinamis?
+                  </span>
+                }
               >
-                <p className="text-base font-normal text-black opacity-80">
+                <p className="text-base font-normal text-white opacity-80">
                   Website Statis adalah website yang kontennya tidak bisa diubah
                   secara praktis, dan tidak ada sistem didalamnya.
                 </p>
                 <br></br>
-                <p className="text-base font-normal text-black opacity-80">
+                <p className="text-base font-normal text-white opacity-80">
                   Website Dinamis adalah website yang kontennya dapat diubah
                   secara praktis melalui management konten, dan didalamnya
                   memiliki sistem.
@@ -165,7 +180,7 @@ function Home() {
 
       <footer
         id="contacts"
-        className="bg-gray-50 flex flex-col px-5 py-12 gap-5 mt-20 sm:px-16 sm:gap-16"
+        className="bg-slate-900 flex flex-col px-5 py-12 gap-5 mt-20 sm:px-16 sm:gap-16"
       >
         <FooterContent />
       </footer>
