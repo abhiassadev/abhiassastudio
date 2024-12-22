@@ -3,7 +3,7 @@ import { Link } from "@nextui-org/react";
 function Event() {
   return (
     <>
-      <div className="bg-gradient-to-r from-green-500 to-emerald-200 h-10 w-full flex justify-center items-center sm:h-16">
+      <div className="bg-gradient-to-r from-green-500 to-emerald-200 h-10 w-full flex justify-center items-center sm:h-12">
         <Link
           href="https://wa.me/6283133793060"
           className="text-sm font-medium text-white sm:text-base"

@@ -1,4 +1,4 @@
-import { Card, CardBody, CardFooter, Link } from "@nextui-org/react";
+import { Card, CardBody, Link } from "@nextui-org/react";
 
 function ProjectCard(props) {
   return (

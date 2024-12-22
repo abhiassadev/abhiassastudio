@@ -22,18 +22,16 @@ function Home() {
     <>
       <Event />
       <MainNavbar />
-      {/* <Category /> */}
-
-      <main className="flex flex-col gap-10 px-5 mt-10 mb-[50vh] sm:mt-44">
+      <main className="flex flex-col gap-10 px-7 mt-10 mb-[50vh] sm:mt-40 sm:px-16 xl:px-32 2xl:px-52">
         <div className="flex flex-col text-wrap text-start">
-          <p className="text-sm font-semibold text-white opacity-80 mt-3 sm:text-lg sm:w-[60vw]">
+          <p className="text-sm font-semibold text-white opacity-80 mt-3 sm:text-xl sm:w-[60vw]">
             Selamat Datang di
-            <span className="font-medium text-green-500 ml-2">
+            <span className="font-medium text-green-500 opacity-100 ml-2">
               Abhiassa Studio
             </span>
           </p>
-          <h1 className="text-5xl font-bold text-white mt-3 sm:text-4xl">
-            Penyedia Jasa Pembuatan{" "}
+          <h1 className="text-5xl font-bold text-white mt-3 sm:text-6xl">
+            Penyedia Jasa Pembuatan<br></br>
             <span className="text-green-500">Website</span>
           </h1>
           <p className="text-sm font-normal text-white opacity-80 mt-3 sm:text-lg sm:w-[60vw]">
@@ -54,7 +52,7 @@ function Home() {
           </div>
         </div>
       </main>
-      <section id="pricing" className="px-5">
+      <section id="pricing" className="px-7 sm:px-16 xl:px-32 2xl:px-52">
         <div className="flex flex-col justify-center items-center">
           <h1 className="text-2xl font-bold text-green-500 sm:text-3xl">
             Pricing
@@ -73,7 +71,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section id="about" className="px-5">
+      <section id="about" className="px-7 sm:px-16 xl:px-32 2xl:px-52">
         <div className="mt-20 sm:text-center sm:mt-44">
           <h1 className="text-base font-medium text-white sm:text-lg">
             Kenapa Harus Pilih
@@ -100,7 +98,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section id="portofolio" className="px-5">
+      <section id="portofolio" className="px-7 sm:px-16 xl:px-32 2xl:px-52">
         <div className="mt-20 sm:text-center sm:mt-44">
           <p className="text-base font-medium text-white sm:text-lg">
             Portofolio
@@ -117,7 +115,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section id="faq" className="px-5">
+      <section id="faq" className="px-7 sm:px-16 xl:px-32 2xl:px-52">
         <div className="mt-20 sm:mt-44">
           <h1 className="text-xl font-bold text-green-500">FAQ</h1>
           <div>
@@ -180,7 +178,7 @@ function Home() {
 
       <footer
         id="contacts"
-        className="bg-slate-900 flex flex-col px-5 py-12 gap-5 mt-20 sm:px-16 sm:gap-16"
+        className="bg-slate-900 flex flex-col px-7 py-12 gap-5 mt-20 sm:px-16 sm:gap-16 xl:px-32 2xl:px-52"
       >
         <FooterContent />
       </footer>

@@ -1,5 +1,4 @@
 import {
-  Chip,
   Link,
   Button,
   Dropdown,
@@ -11,45 +10,47 @@ import {
 function MainNavbar() {
   return (
     <>
-      <header className="sticky top-0 z-20 bg-transparent backdrop-blur-xl flex justify-between items-center gap-3 px-5 py-5 sm:flex-row sm:justify-between sm:items-center sm:px-16 sm:py-5">
+      <header className="sticky top-0 z-20 bg-transparent backdrop-blur-xl flex justify-between items-center gap-3 px-7 py-5 sm:flex-row sm:justify-between sm:items-center sm:px-16 sm:py-5 xl:px-32 2xl:px-52">
         <div>
           <Link href="" className="text-xl font-bold text-white sm:text-2xl">
             Abhiassa Studio
           </Link>
         </div>
-        <nav className="hidden">
-          <ul className="flex gap-5">
+        <nav className="hidden sm:flex">
+          <ul className="flex gap-10">
             <li>
-              <Link href="#">
-                <Chip className="bg-slate-100 text-sm font-medium text-black rounded-lg sm:text-base">
-                  Home
-                </Chip>
+              <Link href="#" className="text-white opacity-80">
+                Home
               </Link>
             </li>
             <li>
-              <Link href="#pricing">
-                <Chip className="bg-slate-100 text-sm font-medium text-black rounded-lg sm:text-base">
-                  Pricing
-                </Chip>
+              <Link href="#about" className="text-white opacity-80">
+                Banefits
               </Link>
             </li>
             <li>
-              <Link href="#portofolio">
-                <Chip className="bg-slate-100 text-sm font-medium text-black rounded-lg sm:text-base">
-                  Portofolio
-                </Chip>
+              <Link href="#pricing" className="text-white opacity-80">
+                Pricing
               </Link>
             </li>
             <li>
-              <Link href="#faq">
-                <Chip className="bg-slate-100 text-sm font-medium text-black rounded-lg sm:text-base">
-                  Faq
-                </Chip>
+              <Link href="#about" className="text-white opacity-80">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link href="#portofolio" className="text-white opacity-80">
+                Portofolio
+              </Link>
+            </li>
+            <li>
+              <Link href="#faq" className="text-white opacity-80">
+                Faq
               </Link>
             </li>
           </ul>
         </nav>
-        <div>
+        <div className="sm:hidden">
           <Dropdown>
             <DropdownTrigger>
               <Button isIconOnly className="bg-transparent">
