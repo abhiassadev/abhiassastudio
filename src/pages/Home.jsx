@@ -57,7 +57,7 @@ function Home() {
           <h1 className="text-2xl font-bold text-green-500 sm:text-3xl">
             Pricing
           </h1>
-          <div className="flex flex-col gap-10 mt-10 sm:grid sm:grid-cols-2">
+          <div className="flex flex-col gap-10 mt-10 sm:grid sm:grid-cols-2 lg:grid-cols-3">
             {data?.map((data) => {
               return (
                 <PackageCard
@@ -79,7 +79,7 @@ function Home() {
           <h1 className="text-2xl font-bold text-green-500 sm:text-3xl">
             ABHIASSA STUDIO
           </h1>
-          <div className="flex flex-col mt-10 gap-10 sm:flex-row">
+          <div className="flex flex-col justify-center items-center gap-10 sm:flex-row sm:h-96">
             <BanefitCard
               icon="bi bi-currency-dollar"
               title="Harga Terjangkau"
@@ -99,7 +99,7 @@ function Home() {
         </div>
       </section>
       <section id="portofolio" className="px-7 sm:px-16 xl:px-32 2xl:px-52">
-        <div className="mt-20 sm:text-center sm:mt-44">
+        <div className="mt-20 sm:text-center sm:mt-0">
           <p className="text-base font-medium text-white sm:text-lg">
             Portofolio
           </p>
