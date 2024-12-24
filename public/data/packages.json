@@ -1,40 +1,40 @@
 [
   {
     "id": 1,
-    "name": "Website Statis",
+    "name": "Statis",
     "price": 269900,
     "description": "Cocok untuk Landing Page, Company Profile, dan Katalog Produk",
     "banefits": [
       "Otomatis online",
       "1 Domain (.com)",
       "Sertifikat SSL",
-      "1-4 Halaman",
+      "1-3 Halaman",
       "Mobile frendly",
       "Tampilan modern",
-      "Desain responsif 3 perangkat"
+      "Desain responsif 4 perangkat"
     ],
     "redirect_link": "https://wa.me/6283133793060"
   },
   {
     "id": 2,
-    "name": "Website Dinamis",
+    "name": "Dinamis",
     "description": "Cocok untuk Toko Online dengan management produk.",
     "price": 369900,
     "banefits": [
       "Otomatis online",
       "1 Domain (.com)",
       "Sertifikat SSL",
-      "1-4 Halaman",
+      "1-5 Halaman",
       "Mobile frendly",
       "Tampilan modern",
-      "Desain responsif 3 perangkat"
+      "Desain responsif 4 perangkat"
     ],
     "features": ["Management konten"],
     "redirect_link": "https://wa.me/6283133793060"
   },
   {
     "id": 3,
-    "name": "Website Kustom",
+    "name": "Kustom",
     "description": "Cocok untuk website dengan fitur tertentu. *harga tergantung projek.",
     "banefits": [
       "Otomatis online",

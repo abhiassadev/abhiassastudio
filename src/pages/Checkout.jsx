@@ -66,25 +66,38 @@ function Checkout() {
       <main className="px-5 py-10">
         <section>
           <div>
-            <h1 className="text-2xl font-semibold text-emerald-400">
-              Form Checkout
-            </h1>
-            <p className="text-sm font-normal text-black opacity-80">
-              Silahkan isi form di bawah ini!
-            </p>
-            <p className="text-sm font-normal text-black opacity-80 mt-5">
-              Paket yang dipilih: {packageId.name}
-            </p>
-            <p className="text-sm font-normal text-black opacity-80">
-              Silahkan isi form di bawah ini!
-            </p>
+            <h1 className="text-2xl font-bold text-green-500">Rincian order</h1>
+            <div className="mt-5">
+              <div className="border border-green-500 rounded-2xl flex justify-between items-center p-3">
+                <div>
+                  <h6 className="text-lg font-semibold text-white">Website</h6>
+                  <p className="text-sm font-medium text-white">
+                    {packageId.name}
+                  </p>
+                </div>
+                <div className="flex gap-3">
+                  <h6 className="text-sm font-medium text-white">
+                    Rp {packageId.price}
+                  </h6>
+                  <div className="bg-green-500 w-4 h-4 flex justify-center items-center rounded-full">
+                    <i className="bi bi-check text-white"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <form onSubmit={checkout} className="flex flex-col gap-5 mt-5">
             <Input
               type="text"
+              label="Nama"
               placeholder="Masukan nama"
               value={client_name}
               onChange={(e) => setClient_name(e.target.value)}
+              classNames={{
+                label: ["text-md font-medium"],
+                input: ["bg-slate-900"],
+                InputWrapper: ["bg-slate-900", "outline-green-500"],
+              }}
             />
             <Input
               type="number"

@@ -11,12 +11,13 @@ function PackageCard(props) {
   return (
     <>
       <Card className="bg-slate-900 w-full p-3 sm:w-80">
-        <CardHeader className="flex-col items-start">
-          <h1 className="text-sm font-medium text-white">
+        <CardHeader className="flex-col items-start gap-2">
+          <h1 className="text-lg font-semibold text-white">
             {props.packageName}
           </h1>
           <h1 className="text-2xl font-bold text-white">
-            Rp {props.price}/Tahun
+            Rp {props.price}
+            <span className="text-sm font-medium ml-2">/Tahun</span>
           </h1>
           <p className="text-xs font-normal text-white opacity-80">
             {props.data.description}

@@ -8,6 +8,7 @@ import MainNavbar from "../components/MainNavbar";
 import PackageCard from "../components/PackageCard";
 import BanefitCard from "../components/BanefitCard";
 import ProjectCard from "../components/ProjectCard";
+import FaqAccordion from "../components/FaqAccordion";
 import FooterContent from "../components/FooterContent";
 
 function Home() {
@@ -79,16 +80,16 @@ function Home() {
           <h1 className="text-2xl font-bold text-green-500 sm:text-3xl">
             ABHIASSA STUDIO
           </h1>
-          <div className="flex flex-col justify-center items-center gap-10 sm:flex-row sm:h-96">
+          <div className="flex flex-col justify-center items-center gap-10 mt-10 sm:flex-row sm:h-96 sm:mt-0">
             <BanefitCard
               icon="bi bi-currency-dollar"
               title="Harga Terjangkau"
-              description="Mulai dari RP 269.900, anda sudah bisa memiliki landing page."
+              description="Mulai dari RP 269.900, anda sudah bisa memiliki website landing page."
             />
             <BanefitCard
               icon="bi bi-clock"
               title="Waktu Pengerjaan Cepat"
-              description="Waktu pengerjaan minimal 4 hari maksimal 2 minggu, tergantung kesulitan projek."
+              description="Waktu pengerjaan minimal 4 hari maksimal 2 minggu, tergantung komplexnya projek."
             />
             <BanefitCard
               icon="bi bi-tools"
@@ -119,59 +120,26 @@ function Home() {
         <div className="mt-20 sm:mt-44">
           <h1 className="text-xl font-bold text-green-500">FAQ</h1>
           <div>
-            <Accordion variant="light">
-              <AccordionItem
-                key="1"
-                aria-label="Accordion 1"
-                title={
-                  <span className="text-white">
-                    Berapa biaya kustom domain?
-                  </span>
-                }
-              >
-                <p className="text-base font-normal text-white opacity-80">
-                  Harga kustom domain berbeda-beda tergantung kebutuhan dan
-                  harga ekstensi domain.
-                </p>
-              </AccordionItem>
-            </Accordion>
-            <Accordion>
-              <AccordionItem
-                key="2"
-                aria-label="Accordion 2"
-                title={
-                  <span className="text-white">
-                    Kapan melakukan pembayaran?
-                  </span>
-                }
-              >
-                <p className="text-base font-normal text-white opacity-80">
-                  Pembayaran dilakukan di awal order. Menggunakan sistem DP.
-                </p>
-              </AccordionItem>
-            </Accordion>
-            <Accordion>
-              <AccordionItem
-                key="3"
-                aria-label="Accordion 3"
-                title={
-                  <span className="text-white">
-                    Apa perbedaan website statis dan dinamis?
-                  </span>
-                }
-              >
-                <p className="text-base font-normal text-white opacity-80">
-                  Website Statis adalah website yang kontennya tidak bisa diubah
-                  secara praktis, dan tidak ada sistem didalamnya.
-                </p>
-                <br></br>
-                <p className="text-base font-normal text-white opacity-80">
-                  Website Dinamis adalah website yang kontennya dapat diubah
-                  secara praktis melalui management konten, dan didalamnya
-                  memiliki sistem.
-                </p>
-              </AccordionItem>
-            </Accordion>
+            <FaqAccordion
+              key="1"
+              question="Apa itu website statis?"
+              answer="Website statis adalah website yang tidak memiliki sistem, seperti database, login, dll."
+            />
+            <FaqAccordion
+              key="2"
+              question="Apa itu website dinamis?"
+              answer="Website dinamis adalah website yang memiliki sistem seperti, database, login, dll."
+            />
+            <FaqAccordion
+              key="3"
+              question="Apa itu web hosting?"
+              answer="Web hosting adalah tempat menyimpan website agar website dapat diakses melalui internet."
+            />
+            <FaqAccordion
+              key="4"
+              question="Apa itu desain responsive?"
+              answer="Desain responsive adalah respon tampilan pada beberapa ukuran perangkat, sehingga tampilan akan terlihat rapi pada beberapa perangkat."
+            />
           </div>
         </div>
       </section>
