@@ -27,10 +27,10 @@ function Home() {
             Tampilkan Bisnis-mu Dengan<br></br>
             <span className="text-slate-950">Website</span>
           </h1>
-          <p className="text-base font-normal text-slate-950 opacity-80 mt-3 sm:text-lg sm:w-[60vw]">
+          <p className="text-base font-normal text-slate-950 opacity-80 mt-3 sm:text-xl">
             Mudahkan pelanggan mengetahui bisnis-mu dengan Website.
           </p>
-          <div className="flex justify-center items-center gap-5">
+          <div className="flex justify-center items-center gap-5 mt-10">
             <a href="#pricing">
               <Button
                 color="slate-950"
@@ -50,7 +50,7 @@ function Home() {
       </main>
       <section id="pricing" className="px-7 sm:px-16 xl:px-32 2xl:px-52">
         <div className="flex flex-col justify-center items-center">
-          <h1 className="text-4xl font-bold text-slate-950 sm:text-3xl">
+          <h1 className="text-4xl font-bold text-slate-950 sm:text-5xl">
             Pricing
           </h1>
           <div className="flex flex-col gap-10 mt-10 sm:grid sm:grid-cols-2 lg:grid-cols-3">
@@ -67,12 +67,15 @@ function Home() {
           </div>
         </div>
       </section>
-      <section id="banefits" className="px-7 sm:px-16 xl:px-32 2xl:px-52">
-        <div className="mt-20 sm:text-center text-center sm:mt-44">
+      <section
+        id="banefits"
+        className="px-7 mt-20 sm:px-16 xl:px-32 2xl:px-52 sm:mt-44"
+      >
+        <div className="sm:text-center text-center">
           <h1 className="text-base font-medium text-slate-950 opacity-80 sm:text-lg">
             Kenapa Harus Pilih
           </h1>
-          <h1 className="text-4xl font-bold text-slate-950 sm:text-3xl">
+          <h1 className="text-4xl font-bold text-slate-950 sm:text-5xl">
             Abhiassa Studio
           </h1>
           <div className="flex flex-col justify-center items-center gap-10 mt-10 sm:flex-row sm:h-96 sm:mt-0">
@@ -94,12 +97,15 @@ function Home() {
           </div>
         </div>
       </section>
-      <section id="portofolio" className="px-7 sm:px-16 xl:px-32 2xl:px-52">
-        <div className="mt-20 text-center sm:mt-0">
+      <section
+        id="portofolio"
+        className="px-7 mt-20 sm:px-16 sm:mt-44 xl:px-32 2xl:px-52"
+      >
+        <div className="text-center">
           <p className="text-base font-medium text-slate-950 opacity-80 sm:text-lg">
             Portofolio
           </p>
-          <h1 className="text-4xl font-bold text-slate-950 sm:text-3xl">
+          <h1 className="text-4xl font-bold text-slate-950 sm:text-5xl">
             Abhiassa Studio
           </h1>
           <div className="flex flex-col gap-5 mt-10 sm:grid sm:grid-cols-2">
@@ -113,7 +119,7 @@ function Home() {
       </section>
       <footer
         id="contacts"
-        className="bg-slate-950 flex flex-col px-7 py-12 gap-5 mt-20 sm:px-16 sm:gap-16 xl:px-32 2xl:px-52"
+        className="bg-slate-950 flex flex-col px-7 py-12 gap-5 mt-20 sm:px-16 sm:mt-44 sm:gap-16 xl:px-32 2xl:px-52"
       >
         <FooterContent />
       </footer>

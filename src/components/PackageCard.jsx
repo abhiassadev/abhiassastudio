@@ -5,9 +5,9 @@ function PackageCard(props) {
     <>
       <div className="bg-white border border-slate-200 w-full p-5 rounded-xl shadow-lg sm:w-80">
         <div className="flex-col items-start gap-3">
-          <h6 className="text-sm font-semibold text-slate-950">
+          <h1 className="text-sm font-semibold text-slate-950">
             {props.packageName}
-          </h6>
+          </h1>
           <h1 className="text-3xl font-bold text-slate-950">
             Rp {props.price}
             <span className="text-sm font-medium ml-2">/Tahun</span>
@@ -30,7 +30,7 @@ function PackageCard(props) {
             );
           })}
         </div>
-        <div className="gap-3">
+        <div className="gap-3 mt-5">
           <a href={props.data.redirect_link}>
             <Button color="slate-950" title="Order" />
           </a>
