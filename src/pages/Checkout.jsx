@@ -1,11 +1,11 @@
 // import MainNavbar from
 
-import MainNavbar from "../components/MainNavbar";
+import Navbar from "../components/Navbar";
 
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-import { Input, Button } from "@nextui-org/react";
+import Button from "../components/Button";
 
 function Checkout() {
   const [data, setData] = useState([]);
@@ -62,7 +62,7 @@ function Checkout() {
   }
   return (
     <>
-      <MainNavbar />
+      <Navbar />
       <main className="px-5 py-10">
         <section>
           <div>
@@ -87,7 +87,7 @@ function Checkout() {
             </div>
           </div>
           <form onSubmit={checkout} className="flex flex-col gap-5 mt-5">
-            <Input
+            <input
               type="text"
               label="Nama"
               placeholder="Masukan nama"
@@ -99,24 +99,19 @@ function Checkout() {
                 InputWrapper: ["bg-slate-900", "outline-green-500"],
               }}
             />
-            <Input
+            <input
               type="number"
               placeholder="Masukan no handphone"
               value={client_phone}
               onChange={(e) => setClient_phone(e.target.value)}
             />
-            <Input
+            <input
               type="text"
               placeholder="Masukan email"
               value={client_email}
               onChange={(e) => setClient_email(e.target.value)}
             />
-            <Button
-              type="submit"
-              className="bg-gradient-to-r from-blue-700 to-emarald-200 text-md font-semibold text-white"
-            >
-              Lanjutkan
-            </Button>
+            <Button type="submit" color="slate-950" title="Lanjutkan" />
           </form>
         </section>
       </main>

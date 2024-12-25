@@ -1,77 +1,43 @@
-import {
-  Dropdown,
-  DropdownTrigger,
-  DropdownMenu,
-  DropdownItem,
-} from "@nextui-org/react";
-import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/react";
-import { Button, Link } from "@nextui-org/react";
+import Button from "../components/Button";
 
 function PackageCard(props) {
   return (
     <>
-      <Card className="bg-slate-900 w-full p-3 sm:w-80">
-        <CardHeader className="flex-col items-start gap-2">
-          <h1 className="text-lg font-semibold text-white">
+      <div className="bg-white border border-slate-200 w-full p-5 rounded-xl shadow-lg sm:w-80">
+        <div className="flex-col items-start gap-3">
+          <h6 className="text-sm font-semibold text-slate-950">
             {props.packageName}
-          </h1>
-          <h1 className="text-2xl font-bold text-white">
+          </h6>
+          <h1 className="text-3xl font-bold text-slate-950">
             Rp {props.price}
             <span className="text-sm font-medium ml-2">/Tahun</span>
           </h1>
-          <p className="text-xs font-normal text-white opacity-80">
+          <p className="text-xs font-normal text-slate-950 opacity-80">
             {props.data.description}
           </p>
-        </CardHeader>
-        <CardBody className="gap-3">
+        </div>
+        <div className="flex flex-col gap-3 mt-5">
           {props.data.banefits.map((banefit, index) => {
             return (
               <div key={index} className="flex items-center gap-2">
-                <div className="bg-green-500 w-5 h-5 flex justify-center items-center rounded-full">
+                <div className="bg-slate-950 w-5 h-5 flex justify-center items-center rounded-full">
                   <i className="bi bi-check text-white"></i>
                 </div>
-                <p className="text-sm font-normal text-white opacity-80">
+                <p className="text-sm font-normal text-slate-950 opacity-80">
                   {banefit}
                 </p>
               </div>
             );
           })}
-        </CardBody>
-        <CardFooter className="gap-3">
-          <Link href={props.data.redirect_link}>
-            <Button className="bg-gradient-to-r from-green-500 to-emerald-200 text-base font-medium text-white">
-              Order
-            </Button>
-          </Link>
-          <Dropdown>
-            <DropdownTrigger>
-              <Button className="font-medium text-white" variant="bordered">
-                Fitur
-              </Button>
-            </DropdownTrigger>
-            <DropdownMenu>
-              {props.data.features?.map((feature, index) => {
-                return (
-                  <DropdownItem key={index}>
-                    <div className="flex items-center gap-2">
-                      <div className="bg-green-500 w-5 h-5 flex justify-center items-center rounded-full">
-                        <i className="bi bi-check text-white"></i>
-                      </div>
-                      <p className="text-sm font-normal text-black opacity-80">
-                        {feature}
-                      </p>
-                    </div>
-                  </DropdownItem>
-                );
-              })}
-            </DropdownMenu>
-          </Dropdown>
-        </CardFooter>
-      </Card>
+        </div>
+        <div className="gap-3">
+          <a href={props.data.redirect_link}>
+            <Button color="slate-950" title="Order" />
+          </a>
+        </div>
+      </div>
     </>
   );
 }
-
-PackageCard.PropTypes = {};
 
 export default PackageCard;

@@ -1,14 +1,12 @@
 import { useEffect, useState } from "react";
 
-import { Accordion, AccordionItem } from "@nextui-org/react";
-import { Button, Link } from "@nextui-org/react";
+import Button from "../components/Button";
 
 import Event from "../components/Event";
-import MainNavbar from "../components/MainNavbar";
+import Navbar from "../components/Navbar";
 import PackageCard from "../components/PackageCard";
 import BanefitCard from "../components/BanefitCard";
 import ProjectCard from "../components/ProjectCard";
-import FaqAccordion from "../components/FaqAccordion";
 import FooterContent from "../components/FooterContent";
 
 function Home() {
@@ -22,40 +20,37 @@ function Home() {
   return (
     <>
       <Event />
-      <MainNavbar />
+      <Navbar />
       <main className="flex flex-col gap-10 px-7 mt-10 mb-[50vh] sm:mt-40 sm:px-16 xl:px-32 2xl:px-52">
-        <div className="flex flex-col text-wrap text-start">
-          <p className="text-sm font-semibold text-white opacity-80 mt-3 sm:text-xl sm:w-[60vw]">
-            Selamat Datang di
-            <span className="font-medium text-green-500 opacity-100 ml-2">
-              Abhiassa Studio
-            </span>
-          </p>
-          <h1 className="text-5xl font-bold text-white mt-3 sm:text-6xl">
-            Penyedia Jasa Pembuatan<br></br>
-            <span className="text-green-500">Website</span>
+        <div className="flex flex-col text-wrap text-center">
+          <h1 className="text-5xl font-bold text-slate-950 mt-3 sm:text-6xl">
+            Tampilkan Bisnis-mu Dengan<br></br>
+            <span className="text-slate-950">Website</span>
           </h1>
-          <p className="text-sm font-normal text-white opacity-80 mt-3 sm:text-lg sm:w-[60vw]">
-            Mudahkan pelanggan mengetahui Informasi tentang Produk, Layanan, dan
-            Jasa yang anda miliki dengan Website.
+          <p className="text-base font-normal text-slate-950 opacity-80 mt-3 sm:text-lg sm:w-[60vw]">
+            Mudahkan pelanggan mengetahui bisnis-mu dengan Website.
           </p>
-          <div className="flex gap-5">
-            <Link href="#pricing">
-              <Button className="bg-gradient-to-r from-green-500 to-emerald-200 text-base font-semibold text-white mt-10 hover:from-100% hover:duration-500 sm:h-12">
-                Buat Sekarang
-              </Button>
-            </Link>
-            <Link href="https://wa.me/6283133793060">
-              <Button className="bg-transparent border border-slate-300 text-base font-semibold text-white mt-10 hover:from-100% hover:duration-500 sm:h-12">
-                Hubungi Kami
-              </Button>
-            </Link>
+          <div className="flex justify-center items-center gap-5">
+            <a href="#pricing">
+              <Button
+                color="slate-950"
+                textColor="white"
+                title="Buat Webesite"
+              />
+            </a>
+            <a href="https://wa.me/6283133793060">
+              <Button
+                color="transparent"
+                textColor="slate-950"
+                title="Hubungi Kami"
+              />
+            </a>
           </div>
         </div>
       </main>
       <section id="pricing" className="px-7 sm:px-16 xl:px-32 2xl:px-52">
         <div className="flex flex-col justify-center items-center">
-          <h1 className="text-2xl font-bold text-green-500 sm:text-3xl">
+          <h1 className="text-4xl font-bold text-slate-950 sm:text-3xl">
             Pricing
           </h1>
           <div className="flex flex-col gap-10 mt-10 sm:grid sm:grid-cols-2 lg:grid-cols-3">
@@ -72,13 +67,13 @@ function Home() {
           </div>
         </div>
       </section>
-      <section id="about" className="px-7 sm:px-16 xl:px-32 2xl:px-52">
-        <div className="mt-20 sm:text-center sm:mt-44">
-          <h1 className="text-base font-medium text-white sm:text-lg">
+      <section id="banefits" className="px-7 sm:px-16 xl:px-32 2xl:px-52">
+        <div className="mt-20 sm:text-center text-center sm:mt-44">
+          <h1 className="text-base font-medium text-slate-950 opacity-80 sm:text-lg">
             Kenapa Harus Pilih
           </h1>
-          <h1 className="text-2xl font-bold text-green-500 sm:text-3xl">
-            ABHIASSA STUDIO
+          <h1 className="text-4xl font-bold text-slate-950 sm:text-3xl">
+            Abhiassa Studio
           </h1>
           <div className="flex flex-col justify-center items-center gap-10 mt-10 sm:flex-row sm:h-96 sm:mt-0">
             <BanefitCard
@@ -100,12 +95,12 @@ function Home() {
         </div>
       </section>
       <section id="portofolio" className="px-7 sm:px-16 xl:px-32 2xl:px-52">
-        <div className="mt-20 sm:text-center sm:mt-0">
-          <p className="text-base font-medium text-white sm:text-lg">
+        <div className="mt-20 text-center sm:mt-0">
+          <p className="text-base font-medium text-slate-950 opacity-80 sm:text-lg">
             Portofolio
           </p>
-          <h1 className="text-2xl font-bold text-green-500 sm:text-3xl">
-            ABHIASSA STUDIO
+          <h1 className="text-4xl font-bold text-slate-950 sm:text-3xl">
+            Abhiassa Studio
           </h1>
           <div className="flex flex-col gap-5 mt-10 sm:grid sm:grid-cols-2">
             <ProjectCard
@@ -116,37 +111,9 @@ function Home() {
           </div>
         </div>
       </section>
-      <section id="faq" className="px-7 sm:px-16 xl:px-32 2xl:px-52">
-        <div className="mt-20 sm:mt-44">
-          <h1 className="text-xl font-bold text-green-500">FAQ</h1>
-          <div>
-            <FaqAccordion
-              key="1"
-              question="Apa itu website statis?"
-              answer="Website statis adalah website yang tidak memiliki sistem, seperti database, login, dll."
-            />
-            <FaqAccordion
-              key="2"
-              question="Apa itu website dinamis?"
-              answer="Website dinamis adalah website yang memiliki sistem seperti, database, login, dll."
-            />
-            <FaqAccordion
-              key="3"
-              question="Apa itu web hosting?"
-              answer="Web hosting adalah tempat menyimpan website agar website dapat diakses melalui internet."
-            />
-            <FaqAccordion
-              key="4"
-              question="Apa itu desain responsive?"
-              answer="Desain responsive adalah respon tampilan pada beberapa ukuran perangkat, sehingga tampilan akan terlihat rapi pada beberapa perangkat."
-            />
-          </div>
-        </div>
-      </section>
-
       <footer
         id="contacts"
-        className="bg-slate-900 flex flex-col px-7 py-12 gap-5 mt-20 sm:px-16 sm:gap-16 xl:px-32 2xl:px-52"
+        className="bg-slate-950 flex flex-col px-7 py-12 gap-5 mt-20 sm:px-16 sm:gap-16 xl:px-32 2xl:px-52"
       >
         <FooterContent />
       </footer>

@@ -1,15 +1,13 @@
-import { Link } from "@nextui-org/react";
-
 function Event() {
   return (
     <>
-      <div className="bg-gradient-to-r from-green-500 to-emerald-200 h-10 w-full flex justify-center items-center sm:h-12">
-        <Link
+      <div className="bg-slate-950 h-10 w-full flex justify-center items-center sm:h-12">
+        <a
           href="https://wa.me/6283133793060"
-          className="text-sm font-medium text-white sm:text-base"
+          className="text-xs font-medium text-white sm:text-base"
         >
           Dapatkan potongan harga sebesar RP 20 ribu!
-        </Link>
+        </a>
       </div>
     </>
   );
