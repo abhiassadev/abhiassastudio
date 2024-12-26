@@ -35,7 +35,7 @@ function Home() {
               <Button
                 color="slate-950"
                 textColor="white"
-                title="Buat Webesite"
+                title="Buat Website"
               />
             </a>
             <a href="https://wa.me/6283133793060">

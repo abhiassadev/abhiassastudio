@@ -81,6 +81,7 @@ function Navbar() {
               </a>
               <button
                 id="toggleButton"
+                aria-label="Toggle button"
                 onClick={() => setIsActive(!isActive)}
                 ref={toggleButtonRef}
                 className="block sm:hidden"

@@ -32,7 +32,7 @@ function PackageCard(props) {
         </div>
         <div className="gap-3 mt-5">
           <a href={props.data.redirect_link}>
-            <Button color="slate-950" title="Order" />
+            <Button color="slate-950" textColor="white" title="Order" />
           </a>
         </div>
       </div>
