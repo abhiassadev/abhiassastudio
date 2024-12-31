@@ -3,7 +3,7 @@ function BanefitCard(props) {
     <>
       <div className="bg-white border border-slate-200 p-5 rounded-xl shadow-lg sm:w-52">
         <div>
-          <div className="bg-slate-950 w-10 h-10 rounded-full flex justify-center items-center">
+          <div className="bg-indigo-600 w-10 h-10 rounded-full flex justify-center items-center">
             <i className={`${props.icon} text-lg text-white`}></i>
           </div>
         </div>

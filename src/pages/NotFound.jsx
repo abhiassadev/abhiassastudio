@@ -12,7 +12,12 @@ function NotFound() {
             Halaman yang diminta tidak ditemukan.
           </p>
           <a href="/">
-            <Button color="slate-950" textColor="text-white" title="Kembali" />
+            <Button
+              color="bg-indigo-600"
+              textColor="text-white"
+              className="hover:bg-indigo-700 hover:duration-500"
+              title="kembali"
+            />
           </a>
         </div>
       </main>

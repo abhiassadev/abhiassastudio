@@ -23,9 +23,12 @@ function Home() {
       <Navbar />
       <main className="flex flex-col gap-10 px-7 mt-10 mb-[50vh] sm:mt-40 sm:px-16 xl:px-32 2xl:px-52">
         <div className="flex flex-col text-wrap text-center">
-          <h1 className="text-5xl font-bold text-slate-950 mt-3 sm:text-6xl">
-            Tampilkan Bisnis-mu Dengan<br></br>
-            <span className="text-slate-950">Website</span>
+          <h1 className="text-5xl font-bold text-slate-950 mt-3 animate-in-animation sm:text-6xl">
+            Tampilkan <span className="text-indigo-600">Bisnis-mu</span>
+            <br></br>
+            Dengan
+            <br></br>
+            <span className="text-indigo-600 delay-100">Website</span>
           </h1>
           <p className="text-base font-normal text-slate-950 opacity-80 mt-3 sm:text-xl">
             Mudahkan pelanggan mengetahui bisnis-mu dengan Website.
@@ -33,15 +36,17 @@ function Home() {
           <div className="flex justify-center items-center gap-5 mt-10">
             <a href="#pricing">
               <Button
-                color="slate-950"
+                color="bg-indigo-600"
                 textColor="white"
+                className="hover:bg-indigo-700 hover:duration-500"
                 title="Buat Website"
               />
             </a>
             <a href="https://wa.me/6283133793060">
               <Button
-                color="transparent"
+                color="bg-white"
                 textColor="slate-950"
+                className="border border-slate-200"
                 title="Hubungi Kami"
               />
             </a>
@@ -50,7 +55,7 @@ function Home() {
       </main>
       <section id="pricing" className="px-7 sm:px-16 xl:px-32 2xl:px-52">
         <div className="flex flex-col justify-center items-center">
-          <h1 className="text-4xl font-bold text-slate-950 sm:text-5xl">
+          <h1 className="text-4xl font-bold text-indigo-600 sm:text-5xl">
             Pricing
           </h1>
           <div className="flex flex-col gap-10 mt-10 sm:grid sm:grid-cols-2 lg:grid-cols-3">
@@ -75,7 +80,7 @@ function Home() {
           <h1 className="text-base font-medium text-slate-950 opacity-80 sm:text-lg">
             Kenapa Harus Pilih
           </h1>
-          <h1 className="text-4xl font-bold text-slate-950 sm:text-5xl">
+          <h1 className="text-4xl font-bold text-indigo-600 sm:text-5xl">
             Abhiassa Studio
           </h1>
           <div className="flex flex-col justify-center items-center gap-10 mt-10 sm:flex-row sm:h-96 sm:mt-0">
@@ -105,7 +110,7 @@ function Home() {
           <p className="text-base font-medium text-slate-950 opacity-80 sm:text-lg">
             Portofolio
           </p>
-          <h1 className="text-4xl font-bold text-slate-950 sm:text-5xl">
+          <h1 className="text-4xl font-bold text-indigo-600 sm:text-5xl">
             Abhiassa Studio
           </h1>
           <div className="flex flex-col gap-5 mt-10 sm:grid sm:grid-cols-2">
